@@ -1,21 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 h1 {
+    margin-bottom: 15px;
     text-align: center;
+    color: #77B6EA;
+    font-size: 50px;
+}
+
+
+
+.box {
+    width: 100%;
+    overflow: none;
+}
+
+.names {
+    overflow: none;
+    text-align: center;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    float: right;
+    margin: 0 2.5% 0 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.text {
+    border: 1px solid black;
+    height: auto;
+    margin: 2.5%;
+    color: black;
+    font-size: 16px;
+    padding: 2%;
+    padding-top: 55px;
+    background-color: #d6c9c9;
 }
 
 .chicken {
-    background-color: #A99F96;
-    border: 1px solid black;
-    
+    color: #37393a;
+    background-color: #e8eef2;
 }
 
-.chicken h3 {
-    background-color: #DDA77B;
-    border: 1px solid black;
-    float:right;
-    
+.beef {
+    color: white;
+    background-color: #3c4952;
 }
 
-.chicken div {
-    float: ;
+.sushi {
+    color: #37393a;
+    background-color: #e8eef2;
 }
 
+
+/*------------ Large devices ------------*/
+
+@media(min-width:992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/*------------ Medium devices ------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .col-md-6,
+    .col-md-12 {
+        float: left;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-12 {
+        margin-left: -10px;
+        width: 100%;
+    }
+
+    .sushi {
+        width: 100px;
+    }
+}
+
+/*------------ Small devices ------------*/
+
+@media (min-width:0px) and (max-width: 767px) {
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
+
+}
